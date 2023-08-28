@@ -1,0 +1,37 @@
+:root{
+    --white: #fff; 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#About-Me{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#My-Work{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Contact-Me{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
