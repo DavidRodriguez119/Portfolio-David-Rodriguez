@@ -1,5 +1,7 @@
 :root{
     --light-blue: rgb(148, 204, 223);
+    --dark-blue: darkblue;
+    --header-color: rgb(42, 42, 56);
 }
 
 * {
@@ -13,12 +15,12 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(42, 42, 56);
+    background-color: var(--header-color);
 }
 
 h1{
     background-color: var(--light-blue);
-    color: rgb(42, 42, 56);
+    color: var(--header-color);
 }
 
 nav{
@@ -40,14 +42,14 @@ nav a:hover{
     color: black;
 }
 
-#Name-Picture{
+#My-Name{
     position: relative;
     height: 25vh;
     width: 100vw;
     background-color: var(--light-blue);
 }
 
-#Name-Picture h2{
+#My-Name h2{
     width: 100%;
     position: absolute;
     top: 30%;
@@ -55,7 +57,7 @@ nav a:hover{
     right: 5%;
     text-align: center;
     vertical-align: middle;
-    color: rgb(42, 42, 56);
+    color: var(--header-color);
     font-size: 50px;
 }
 
@@ -76,7 +78,7 @@ main section{
 
 .Section-Title{
     padding-right: 20px;
-    color: darkblue;
+    color: var(--dark-blue);
     font-size: 30px;
     height: 100%;
     width: 300px;
@@ -86,13 +88,35 @@ main section{
 
 .content{
     padding: 20px;
-    /* width: 65%; */
     flex-grow: 1;
-    border-left: solid 5px darkblue;
+    border-left: solid 5px var(--dark-blue);
+}
+
+#Info-Picture{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #About-Me div p{
-    color: rgb(54, 54, 176);
+    color: black;
+    width: 600px;
+    text-align: justify;
+    margin: 15px;
+}
+
+#picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #Images{
@@ -102,22 +126,40 @@ main section{
     justify-content: center;
 }
 
-#Deployed-App{
+#Images div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#art1{
     border: solid 5px var(--light-blue);
     border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+#art1:hover{
+    border: var(--dark-blue) solid 6px;
+    border-radius: 7px;
+}
+
+#Deployed-App{
     width: 100%;
     height: 350px;
 }
 
-#Deployed-App:hover{
-    border: darkblue solid 6px;
-    border-radius: 15px;
+article div{
+    background-color: var(--light-blue);
 }
 
-#My-Work #Images div img{
-    width: 340px;
+#My-Work #Images div article{
     border: solid 5px var(--light-blue);
     border-radius: 15px;
+    margin: 7px;
+}
+
+.Regular-Size-Img{
+    width: 335px;
 }
 
 #Contact-Info{
@@ -130,7 +172,12 @@ main section{
 
 #Contact-Info p, 
 #Contact-Info a{
-    border-bottom: solid 5px darkblue;
+    border-bottom: solid 5px var(--dark-blue);
+}
+
+#Contact-Info a:hover{
+    border-bottom: solid 5px var(--light-blue);
+    color: var(--light-blue);
 }
 
 @media screen and (max-width: 500px){
@@ -139,11 +186,16 @@ main section{
     }
 }
 
-/* @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     main section{
         flex-wrap: wrap;
         justify-content: center;
     }
-} */
+
+    .content{
+        border-top: solid 5px var(--dark-blue);
+        border-left: none;
+    }
+}
 
 
