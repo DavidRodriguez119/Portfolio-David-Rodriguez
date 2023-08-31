@@ -1,5 +1,4 @@
 :root{
-    --white: #fff; 
     --light-blue: rgb(148, 204, 223);
 }
 
@@ -7,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 header{
@@ -15,6 +13,12 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(42, 42, 56);
+}
+
+h1{
+    background-color: var(--light-blue);
+    color: rgb(42, 42, 56);
 }
 
 nav{
@@ -31,19 +35,28 @@ nav a{
     border: none;
 }
 
+nav a:hover{
+    background-color: var(--light-blue);
+    color: black;
+}
+
 #Name-Picture{
     position: relative;
     height: 25vh;
     width: 100vw;
+    background-color: var(--light-blue);
 }
 
-h2{
-    height: 40px;
-    width: 25%;
+#Name-Picture h2{
+    width: 100%;
     position: absolute;
-    top: 50%;
-    left: 75%;
+    top: 30%;
+    left: 0;
     right: 5%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(42, 42, 56);
+    font-size: 50px;
 }
 
 main{
@@ -51,11 +64,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75vh;
 }
 
 main section{
-    height: 100%;
     width: 100%;
     padding: 15px;
     display: flex;
@@ -63,22 +74,63 @@ main section{
     align-items: center;
 }
 
-h3{
+.Section-Title{
+    padding-right: 20px;
+    color: darkblue;
+    font-size: 30px;
     height: 100%;
+    width: 300px;
+    text-align: right;
+    font-weight: bold;
+}
 
+.content{
+    padding: 20px;
+    /* width: 65%; */
+    flex-grow: 1;
+    border-left: solid 5px darkblue;
+}
+
+#About-Me div p{
+    color: rgb(54, 54, 176);
 }
 
 #Images{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#My-Work img{
-    width: 150px;
-}
-
-#Images:first-child{
+#Deployed-App{
+    border: solid 5px var(--light-blue);
+    border-radius: 15px;
     width: 100%;
+    height: 350px;
+}
+
+#Deployed-App:hover{
+    border: darkblue solid 6px;
+    border-radius: 15px;
+}
+
+#My-Work #Images div img{
+    width: 340px;
+    border: solid 5px var(--light-blue);
+    border-radius: 15px;
+}
+
+#Contact-Info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+}
+
+#Contact-Info p, 
+#Contact-Info a{
+    border-bottom: solid 5px darkblue;
 }
 
 @media screen and (max-width: 500px){
@@ -87,11 +139,11 @@ h3{
     }
 }
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
     main section{
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+} */
 
 

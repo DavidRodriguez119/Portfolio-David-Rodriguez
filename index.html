@@ -11,7 +11,9 @@
 
 <body>
     <header>
-        <h1>Portfolio</h1>
+        <div>
+            <h1>Portfolio</h1>
+        </div>
         <!-- Navbar -->
         <nav>
             <a href="#About-Me">About me</a>
@@ -19,28 +21,38 @@
             <a href="#Contact-Me">Contact Me</a>
         </nav>
     </header>    
-    <div id="Name-Picture">
-       <h2>David Rodriguez</h2>
-    </div>
+    <section id="Name-Picture">
+            <h2>David Rodriguez</h2>
+    </section>
     <main>
         <!-- About Me -->
         <section id="About-Me">
-            <h3>text</h3>
-            <p>info paragraph</p>
+            <figure class="Section-Title">
+                <p>About Me</p>
+            </figure>
+            <div class="content">
+                <p>info paragraph</p>
+            </div>
         </section>
         <!-- My Work -->
         <section id="My-Work">
-            <h3>text</h3>
-            <img src="assets\images\CodingInProgress.png" alt="Work in Progress image">
-            <div id="Images">
-                <img src="assets\images\CodingInProgress.png" alt="Work in Progress image">
-                <img src="assets\images\CodingInProgress.png" alt="Work in Progress image">
+            <figure class="Section-Title">
+                <p>My Work</p>
+            </figure>
+            <div id="Images" class="content">
+                <a href="https://davidrodriguez119.github.io/Challenge_Week1/"><img id="Deployed-App" src="assets\images\Screenshot_Deployed_Application.png" alt="Work in Progress image"></a>
+                <div>
+                    <img class="Regular-Size-Img" src="assets\images\CodingInProgress.png" alt="Work in Progress image">
+                    <img class="Regular-Size-Img" src="assets\images\CodingInProgress.png" alt="Work in Progress image">
+                </div>    
             </div>
         </section>
         <!-- Contact me -->
         <section id="Contact-Me">
-            <h3>text</h3>
-            <div #Contact-Info>
+            <figure class="Section-Title">
+                <p>Let's get in touch!</p>
+            </figure>
+            <div id="Contact-Info" class="content">
                 <p>+1 226-792-9856</p>
                 <p>santiago1.dsrr@gmail.com</p>
                 <a href="https://github.com/DavidRodriguez119">GitHub</a>
