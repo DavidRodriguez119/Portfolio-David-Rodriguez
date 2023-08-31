@@ -1,37 +1,97 @@
 :root{
     --white: #fff; 
-
+    --light-blue: rgb(148, 204, 223);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    border: 1px solid black;
+}
 
 header{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav{
+    height: 10vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    margin: 15px;
+    color: var(--light-blue);
+    border-bottom: solid 2px var(--light-blue);
+    border: none;
+}
+
+#Name-Picture{
+    position: relative;
+    height: 25vh;
+    width: 100vw;
+}
+
+h2{
+    height: 40px;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    right: 5%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+main section{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    height: 100%;
+
+}
+
+#Images{
     display: flex;
     flex-wrap: wrap;
 }
 
-#About-Me{
-    display: flex;
-    flex-wrap: wrap;
+#My-Work img{
+    width: 150px;
 }
 
-#My-Work{
-    display: flex;
-    flex-wrap: wrap;
+#Images:first-child{
+    width: 100%;
 }
 
-#Contact-Me{
-    text-align: center;
+@media screen and (max-width: 500px){
+    header{
+        justify-content: center;
+    }
 }
 
-footer{
-    text-align: center;
+@media screen and (max-width: 768px){
+    main section{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
+
+
