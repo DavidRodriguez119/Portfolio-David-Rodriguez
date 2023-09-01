@@ -180,10 +180,17 @@ article div{
     color: var(--light-blue);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 580px){
     header{
         justify-content: center;
     }
+
+    #Contact-Info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 768px){
@@ -196,6 +203,13 @@ article div{
         border-top: solid 5px var(--dark-blue);
         border-left: none;
     }
+
+    :root{
+        --light-blue: rgb(148, 223, 163);
+        --dark-blue: rgb(0, 139, 46);
+        --header-color: rgb(42, 42, 56);
+    }
+
 }
 
 
