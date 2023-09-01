@@ -23,6 +23,14 @@ THEN I am presented with a responsive layout that adapts to my viewport
 Mock-Up
 
 ## Screenshot of Deployed Website:
+![Top part of the Deployed app.](.\assets\images\Finished_app.png)
 
+![Top part of the Deployed app.](.\assets\images\Finished_app_II.png)
 
-## Link to Deployed 
+## Link to Deployed Website
+https://davidrodriguez119.github.io/Portfolio-David-Rodriguez/
+
+## Technologies
+
+### HTML
+### CSS
